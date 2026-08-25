@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وزارت امور خارجه</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            background-color: #ffffff;
+            color: #2c3e50;
+            direction: rtl;
+        }
+
+        /* Loading Screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        #loading-screen img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        #loading-screen p {
+            font-size: 15px;
+            color: #555555;
+            font-weight: 500;
+        }
+
+        /* Main Container */
+        #main-content {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            padding: 25px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eef2f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-container img {
+            max-height: 75px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .header-title span {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #475569;
+            margin-top: 2px;
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 750px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: right;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            font-size: 14px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            width: 40%;
+            border-left: 1px solid #edf2f7;
+        }
+
+        td {
+            color: #1e293b;
+            font-weight: 500;
+            width: 60%;
+            direction: ltr;
+            text-align: right;
+        }
+
+        .persian-val {
+            direction: rtl;
+            text-align: right;
+        }
+
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #fcfdfd;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            th, td {
+                padding: 12px 14px;
+                font-size: 13px;
+            }
+            .logo-container img {
+                max-height: 60px;
+            }
+            .header-title {
+                font-size: 14px;
+            }
+            .header-title span {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loading Screen (7 Seconds) -->
+    <div id="loading-screen">
+        <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading...">
+        <p>در حال بارگذاری اطلاعات...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/150x70?text=LOGO';">
+            </div>
+            <div class="header-title">
+                دولت جمهوری اسلامی افغانستان
+                <span>وزارت امور خارجه</span>
+                 <span>سفارت افغانستان .ایران، تهران  </span>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>شماره </th>
+                        <td style="direction: ltr; text-align: right;">SC159753486015</td>
+                    </tr>
+                    <tr>
+                        <th>تاریخ صدور (شمسی) </th>
+                        <td class="persian-val">02-06-1405</td>
+                    </tr>
+                    <tr>
+                        <th>نام خانوادگی </th>
+                        <td class="persian-val">احمدی</td>
+                    </tr>
+                    <tr>
+                        <th>نام </th>
+                        <td class="persian-val">محمد کریم</td>
+                    </tr>
+                    <tr>
+                        <th>نام پدر </th>
+                        <td class="persian-val"> محسن    </td>
+                    </tr>
+                    <tr>
+                        <th>تاریخ تولد (شمسی) </th>
+                        <td class="persian-val">01-01-1341</td>
+                    </tr>
+                  <tr>
+                        <th>Last name</th>
+                        <td style="direction: ltr; text-align: right;">AHMADI</td>
+                    </tr>
+                   <tr>
+                        <th> Name</th>
+                        <td style="direction: ltr; text-align: right;">MOHAMMAD KARIM</td>
+                    </tr>
+                    <tr>
+                <th> Father's name</th>
+                        <td style="direction: ltr; text-align: right;">MOHSIN</td>
+                    </tr>
+                    <tr>
+                     <th>Date of Birth</th>
+                        <td style="direction: ltr; text-align: right;">21-03-1962</td>
+                    </tr>
+                    <tr>
+                        <th>Issue Date</th>
+                        <td style="direction: ltr; text-align: right;">24-08-2026</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loader = document.getElementById('loading-screen');
+                const mainContent = document.getElementById('main-content');
+                
+                loader.style.opacity = '0';
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                    mainContent.style.display = 'flex';
+                }, 400);
+            }, 7000);
+        });
+    </script>
+</body>
+</html>
